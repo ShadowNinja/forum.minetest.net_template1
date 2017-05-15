@@ -11,24 +11,27 @@ html {
 	font-size: 100%;
 	/* Always show a scrollbar for short pages - stops the jump when the scrollbar appears. non-IE browsers */
 	height: 101%;
+	//background:none !important;
 }
 
 body {
 	/* Text-Sizing with ems: http://www.clagnut.com/blog/348/ */
-	font-family: Verdana, Helvetica, Arial, sans-serif;
+	//font-family: Verdana, Helvetica, Arial, sans-serif;
 	color: #828282;
 	background-color: #FFFFFF;
+	background-image: url("{T_THEME_PATH}/images/body_bg.png");
 	/*font-size: 62.5%;			 This sets the default font size to be equivalent to 10px */
-	font-size: 10px;
+	font-size: 75%;
 	margin: 0;
-	padding: 12px 0;
+	//padding: 12px 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1 {
 	/* Forum name */
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin-right: 200px;
-	color: #FFFFFF;
+	color: #323232;
 	margin-top: 15px;
 	font-weight: bold;
 	font-size: 2em;
@@ -36,7 +39,7 @@ h1 {
 
 h2 {
 	/* Forum header titles */
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	color: #3f3f3f;
 	font-size: 2em;
@@ -62,7 +65,7 @@ h3 {
 
 h4 {
 	/* Forum and topic list titles */
-	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, Sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.3em;
 }
 
@@ -74,6 +77,7 @@ p {
 
 img {
 	border-width: 0;
+	max-width: 100%;
 }
 
 hr {
@@ -102,8 +106,15 @@ p.right {
 /* Main blocks
 ---------------------------------------- */
 #wrap {
-	padding: 0 20px;
+	//padding: 0 20px;
+	margin: 0 auto;
 	min-width: 650px;
+	max-width: 1150px;
+	width:95%;
+	box-shadow: 0 0 58px 2px #CCC;
+	background: #FFFFFF;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
 }
 
 #simple-wrap {
@@ -112,6 +123,7 @@ p.right {
 
 #page-body {
 	margin: 4px 0;
+	padding: 0 10px;
 	clear: both;
 }
 
@@ -183,28 +195,36 @@ a#logo:hover {
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 .headerbar {
-	background: #ebebeb none repeat-x 0 0;
-	color: #FFFFFF;
-	margin-bottom: 4px;
+	background: linear-gradient(#D4D4D4 0%, #FFFFFF 25%);
+	background: -moz-linear-gradient(#D4D4D4 0%, #FFFFFF 25%);
+	background: -webkit-linear-gradient(#D4D4D4 0%, #FFFFFF 25%);
+	color: #323232;
+	//margin-bottom: 4px;
 	padding: 0 5px;
+	min-height: 60px;
 }
 
 .navbar {
-	background-color: #ebebeb;
+	background-color: #fff;
 	padding: 0 10px;
 }
 
 .forabg {
-	background: #b1b1b1 none repeat-x 0 0;
+	//background: #b1b1b1 none repeat-x 0 0;
 	margin-bottom: 4px;
-	padding: 0 5px;
+	//padding: 0 10px;
 	clear: both;
 }
 
+.forabg .inner {
+	margin: 10px -10px;
+}
+
 .forumbg {
-	background: #ebebeb none repeat-x 0 0;
+	//background: #ebebeb none repeat-x 0 0;
 	margin-bottom: 4px;
-	padding: 0 5px;
+	//padding: 0 5px;
+	margin: 0 -10px 0 -10px;
 	clear: both;
 }
 
@@ -216,10 +236,14 @@ a#logo:hover {
 }
 
 .post {
-	padding: 0 10px;
-	margin-bottom: 4px;
-	background-repeat: no-repeat;
-	background-position: 100% 0;
+	//padding: 0 10px;
+	//margin-bottom: 4px;
+	//background-repeat: no-repeat;
+	border: 1px solid;
+	//background-position: 100% 0;
+	border-color: #dde4eb;
+	border-top-color: #fff;
+	border-bottom-color: #ccc;
 }
 
 .post:target .content {
@@ -230,9 +254,9 @@ a#logo:hover {
 	color: #000000;
 }
 
-.bg1	{ background-color: #f7f7f7;}
-.bg2	{ background-color: #f2f2f2; }
-.bg3	{ background-color: #ebebeb; }
+/*.bg1	{ background-color: #EDF1F5;}
+.bg2	{ background-color: #EDF1F5; } C55*/
+.bg3	{ background-color: #EDF1F5; }//#ebebeb
 
 .rowbg {
 	margin: 5px 5px 2px 5px;
@@ -253,6 +277,7 @@ span.corners-top, span.corners-bottom, span.corners-top span, span.corners-botto
 	display: block;
 	height: 5px;
 	background-repeat: no-repeat;
+	visibility: hidden;
 }
 
 span.corners-top {
@@ -321,7 +346,6 @@ ul.linklist li.rightside, p.rightside {
 ul.navlinks {
 	padding-bottom: 1px;
 	margin-bottom: 1px;
-	border-bottom: 1px solid #FFFFFF;
 	font-weight: bold;
 }
 

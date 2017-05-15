@@ -5,11 +5,10 @@ Colours and backgrounds for common.css
 
 html, body {
 	color: #536482;
-	background-color: #FFFFFF;
 }
 
 h1 {
-	color: #FFFFFF;
+	color: #323232;
 }
 
 h2 {
@@ -48,28 +47,31 @@ hr.dashed {
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 .headerbar {
-	background-color: #12A3EB;
-	background-image: url("{T_THEME_PATH}/images/bg_header.gif");
-	color: #FFFFFF;
+	//background-color: #12A3EB;
+	//background-image: url("{T_THEME_PATH}/images/bg_header.gif");
+	//color: #FFFFFF;
 }
 
 .navbar {
-	background-color: #cadceb;
+	background: #EEE;
+	clear:both;
 }
 
 .forabg {
-	background-color: #0076b1;
-	background-image: url("{T_THEME_PATH}/images/bg_list.gif");
+	//background-color: #0076b1;
+	//background-image: url("{T_THEME_PATH}/images/bg_list.gif");
 }
 
 .forumbg {
-	background-color: #12A3EB;
-	background-image: url("{T_THEME_PATH}/images/bg_header.gif");
+	//background-color: #536482;
+	//background-image: url("{T_THEME_PATH}/images/bg_header.gif");
 }
 
 .panel {
-	background-color: #ECF1F3;
 	color: #28313F;
+	margin: 1em 3em 1em 3em;
+	border: 1px dotted #8cacbb;
+	background: #dee7ec;
 }
 
 .post:target .content {
@@ -80,9 +82,17 @@ hr.dashed {
 	color: #000000;
 }
 
-.bg1	{ background-color: #ECF3F7; }
+/*.bg1	{ background-color: #ECF3F7; }
 .bg2	{ background-color: #e1ebf2;  }
-.bg3	{ background-color: #cadceb; }
+.bg3	{ background-color: #cadceb; }*/
+
+/*.bg1	{ background-color: #EDF1F5;}
+.bg2	{ background-color: #EDF1F5; } C55*/
+.bg3	{ background-color: #EDF1F5; }/*#ebebeb*/
+
+/* C55 */
+li.sticky.bg1	{ background-color: #EDF1F5;}
+li.sticky.bg2	{ background-color: #EDF1F5;}
 
 .ucprowbg {
 	background-color: #DCDEE2;
@@ -106,13 +116,6 @@ span.corners-bottom {
 
 span.corners-bottom span {
 	background-image: url("{T_THEME_PATH}/images/corners_right.png");
-}
-
-/* Horizontal lists
-----------------------------------------*/
-
-ul.navlinks {
-	border-bottom-color: #FFFFFF;
 }
 
 /* Table styles
@@ -246,15 +249,15 @@ a:active	{ color: #368AD2; }
 
 /* Links on gradient backgrounds */
 #search-box a:link, .navbg a:link, .forumbg .header a:link, .forabg .header a:link, th a:link {
-	color: #FFFFFF;
+	color: #323232;
 }
 
 #search-box a:visited, .navbg a:visited, .forumbg .header a:visited, .forabg .header a:visited, th a:visited {
-	color: #FFFFFF;
+	color: #323232;
 }
 
 #search-box a:hover, .navbg a:hover, .forumbg .header a:hover, .forabg .header a:hover, th a:hover {
-	color: #A8D8FF;
+	color: #009DFF;
 }
 
 #search-box a:active, .navbg a:active, .forumbg .header a:active, .forabg .header a:active, th a:active {
@@ -370,8 +373,7 @@ Colours and backgrounds for content.css
 -------------------------------------------------------------- */
 
 ul.forums {
-	background-color: #eef5f9;
-	background-image: url("{T_THEME_PATH}/images/gradient.gif");
+	background-color: #fbfbfb;
 }
 
 ul.topiclist li {
@@ -405,20 +407,16 @@ li.row strong {
 }
 
 li.row:hover {
-	background-color: #F6F4D0;
+	/*background-color: #D6D6FF; C55*/
 }
 
 li.row:hover dd {
-	border-left-color: #CCCCCC;
+	/*border-left-color: #CCCCCC; C55*/
 }
 
 .rtl li.row:hover dd {
-	border-right-color: #CCCCCC;
+	/*border-right-color: #CCCCCC; C55*/
 	border-left-color: transparent;
-}
-
-li.header dt, li.header dd {
-	color: #FFFFFF;
 }
 
 /* Forum list column styles */
@@ -496,7 +494,7 @@ dl.codebox dt {
 }
 
 dl.codebox code {
-	color: #2E8B57;
+	color: #000000;
 }
 
 .syntaxbg		{ color: #FFFFFF; }
@@ -651,8 +649,15 @@ fieldset.polls dd div {
 	color: #000000;
 }
 
+.postprofile img {
+	max-width: 64px;
+	max-height: 64px;
+}
+
 .online {
 	background-image: url("{IMG_ICON_USER_ONLINE_SRC}");
+	background-repeat: no-repeat;
+	background-position: top right;
 }
 
 /*  	

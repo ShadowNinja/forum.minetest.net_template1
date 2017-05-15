@@ -5,6 +5,7 @@ ul.topiclist {
 	display: block;
 	list-style-type: none;
 	margin: 0;
+	border-bottom: 1px solid #009DFF;
 }
 
 ul.forums {
@@ -29,10 +30,11 @@ ul.topiclist li.row dl {
 ul.topiclist dt {
 	display: block;
 	float: left;
-	width: 50%;
-	font-size: 1.1em;
+	width: 47%;/*C55*/
+	/*font-size: 1.1em; C55*/
 	padding-left: 5px;
 	padding-right: 5px;
+padding-top: 3px; /*C55*/
 }
 
 ul.topiclist dd {
@@ -75,23 +77,23 @@ li.row strong {
 }
 
 li.row:hover {
-	background-color: #f6f6f6;
+	/*background-color: #f6f6f6; C55*/
 }
 
 li.row:hover dd {
-	border-left-color: #CCCCCC;
+	/*border-left-color: #CCCCCC; C55*/
 }
 
 li.header dt, li.header dd {
 	line-height: 1em;
 	border-left-width: 0;
 	margin: 2px 0 4px 0;
-	color: #FFFFFF;
+	color: #323232;
 	padding-top: 2px;
 	padding-bottom: 2px;
 	font-size: 1em;
 	font-family: Arial, Helvetica, sans-serif;
-	text-transform: uppercase;
+	//text-transform: uppercase;
 }
 
 li.header dt {
@@ -108,8 +110,9 @@ li.header dl.icon {
 
 li.header dl.icon dt {
 	/* Tweak for headers alignment when folder icon used */
-	padding-left: 0;
-	padding-right: 50px;
+	padding-left: 10px;
+	font-size:1.3em;
+	padding-right: 30px;
 }
 
 /* Forum list column styles */
@@ -120,7 +123,7 @@ dl.icon {
 }
 
 dl.icon dt {
-	padding-left: 45px;					/* Space for folder icon */
+	padding-left: 52px;/*C55*/					/* Space for folder icon */
 	background-repeat: no-repeat;
 	background-position: 5px 95%;		/* Position of topic icon */
 }
@@ -229,9 +232,10 @@ div[class].topic-actions {
 	padding: 0;
 	line-height: 1.48em;
 	color: #333333;
-	width: 76%;
-	float: left;
+	//width: 76%;
+	//float: right;
 	clear: both;
+margin: 10px;
 }
 
 .postbody .ignore {
@@ -240,17 +244,17 @@ div[class].topic-actions {
 
 .postbody h3.first {
 	/* The first post on the page uses this */
-	font-size: 1.7em;
+	/*font-size: 1.7em; C55*/
 }
 
 .postbody h3 {
 	/* Postbody requires a different h3 format - so change it here */
-	font-size: 1.5em;
+	font-size: 1.15em;
 	padding: 2px 0 0 0;
 	margin: 0 0 0.3em 0 !important;
 	text-transform: none;
 	border: none;
-	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 125%;
 }
 
@@ -260,7 +264,9 @@ div[class].topic-actions {
 }
 
 .postbody .content {
-	font-size: 1.3em;
+	font-size: 1.2em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.2em;
 }
 
 .search .postbody {
@@ -318,7 +324,7 @@ div[class].topic-actions {
 	min-height: 3em;
 	overflow: hidden;
 	line-height: 1.4em;
-	font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	color: #333333;
 	padding-bottom: 1px;
@@ -345,7 +351,7 @@ div[class].topic-actions {
 }
 
 .content p {
-	font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.2em;
 	margin-bottom: 1em;
 	line-height: 1.4em;
@@ -733,21 +739,21 @@ fieldset.polls dd div {
 ----------------------------------------*/
 .postprofile {
 	/* Also see tweaks.css */
-	margin: 5px 0 10px 0;
-	min-height: 80px;
+	margin: 15px 10px 19px 10px;
+	//min-height: 80px;
 	color: #666666;
-	border-left: 1px solid #FFFFFF;
-	width: 22%;
-	float: right;
-	display: inline;
+	//border-right: 1px solid #FFFFFF;
+	//width: 22%;
+	//float: right;
+	//display: block;
 }
 .pm .postprofile {
-	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
 }
 
 .postprofile dd, .postprofile dt {
 	line-height: 1.2em;
-	margin-left: 8px;
+	margin-right: 8px;
 }
 
 .postprofile strong {

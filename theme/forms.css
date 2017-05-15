@@ -262,7 +262,7 @@ fieldset.submit-buttons input {
 }
 
 #message-box textarea {
-	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	width: 450px;
 	height: 270px;
 	min-width: 100%;
@@ -390,4 +390,3 @@ input.search {
 .medium { width: 50%;}
 .narrow { width: 25%;}
 .tiny { width: 10%;}
-

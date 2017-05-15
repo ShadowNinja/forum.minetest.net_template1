@@ -21,28 +21,28 @@ a:active	{ color: #d2d2d2; text-decoration: none; }
 
 /* Links on gradient backgrounds */
 #search-box a:link, .navbg a:link, .forumbg .header a:link, .forabg .header a:link, th a:link {
-	color: #FFFFFF;
+	color: #323232;
 	text-decoration: none;
 }
 
 #search-box a:visited, .navbg a:visited, .forumbg .header a:visited, .forabg .header a:visited, th a:visited {
-	color: #FFFFFF;
+	color: #323232;
 	text-decoration: none;
 }
 
 #search-box a:hover, .navbg a:hover, .forumbg .header a:hover, .forabg .header a:hover, th a:hover {
-	color: #ffffff;
+	color: #323232;
 	text-decoration: underline;
 }
 
 #search-box a:active, .navbg a:active, .forumbg .header a:active, .forabg .header a:active, th a:active {
-	color: #ffffff;
+	color: #323232;
 	text-decoration: none;
 }
 
 /* Links for forum/topic lists */
 a.forumtitle {
-	font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.2em;
 	font-weight: bold;
 	color: #898989;
@@ -61,11 +61,16 @@ a.forumtitle:active {
 }
 
 a.topictitle {
-	font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
-	font-size: 1.2em;
-	font-weight: bold;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.2em; /*C55*/
+	/*font-weight: bold; C55*/
+	line-height: 1.3em;
 	color: #898989;
 	text-decoration: none;
+}
+
+li.unread a.topictitle {
+	font-weight: bold; /*C55*/
 }
 
 /* a.topictitle:visited { color: #d2d2d2; } */
@@ -110,6 +115,7 @@ a.topictitle:active {
 	font-weight: bold;
 	color: #898989;
 	text-decoration: none;
+	font-size:1.3em;
 }
 
 .postprofile a:hover, .postprofile dt.author a:hover {
